@@ -3,16 +3,23 @@ import { InvalidDividerException } from './../exception/InvalidDividerException'
 
 class CalculatorService {
   sum(value1: any, value2: any): number {
-    return 1;
+    this.validate(value1, value2); 
+
+    return parseFloat(value1) + parseFloat(value2);
   }
 
   sub(value1: any, value2: any): number {
-    return 1;
+    this.validate(value1, value2); 
+
+    return parseFloat(value1) - parseFloat(value2);
   }
 
   mult(value1: any, value2: any): number {
-    return 1;
+    this.validate(value1, value2); 
+
+    return parseFloat(value1) * parseFloat(value2);
   }
+
   div(value1: any, value2: any): number {
     this.validate(value1, value2);
     this.validateDivider(value2);
