@@ -76,8 +76,8 @@ describe(`${title} - Division`, () => {
 
   it(`${valid} - double case`, () => {
     expect(CalculatorService.div(2.5, 1.6)).toBe(1.5625);
-    expect(CalculatorService.mult(1.3, 2)).toBe(0.65);
-    expect(CalculatorService.mult(-0.5, 2)).toBe(-0.25);
+    expect(CalculatorService.div(1.3, 2)).toBe(0.65);
+    expect(CalculatorService.div(-0.5, 2)).toBe(-0.25);
   });
 
   it(`${error} - value`, () => {
