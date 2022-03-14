@@ -19,6 +19,7 @@ describe(`${title} - Addition`, () => {
     expect(CalculatorService.sum(1.3, 2)).toBe(3.3);
     expect(CalculatorService.sum(-0.5, 2)).toBe(1.5);
   });
+
   it(`${error} - value`, () => {
     expect(() => {
       CalculatorService.sum(5, "s");
@@ -85,6 +86,7 @@ describe(`${title} - Division`, () => {
       CalculatorService.div(5, "s");
     }).toThrow(InvalidNumberException);
   });
+  
   it(`${error} - divider`, () => {
     expect(() => {
       CalculatorService.div(5, 0);
