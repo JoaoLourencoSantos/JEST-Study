@@ -1,4 +1,4 @@
-import { InvalidNumberException } from "./../src/exception/InvalidNumberException";
+import { InvalidNumberException } from "../src/exception/InvalidNumberException";
 import CalculatorService from "../src/service/CalculatorService";
 import { InvalidDividerException } from "../src/exception/InvalidDividerException";
 
