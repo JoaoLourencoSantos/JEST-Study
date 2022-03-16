@@ -1,5 +1,5 @@
-import { InvalidNumberException } from '../exception/InvalidNumberException';
-import { InvalidDividerException } from './../exception/InvalidDividerException';
+import { InvalidNumberException } from '../exceptions/InvalidNumberException';
+import { InvalidDividerException } from '../exceptions/InvalidDividerException';
 
 class CalculatorService {
   sum(value1: any, value2: any): number {

@@ -1,6 +1,6 @@
-import { InvalidNumberException } from "../src/exception/InvalidNumberException";
-import CalculatorService from "../src/service/CalculatorService";
-import { InvalidDividerException } from "../src/exception/InvalidDividerException";
+import { InvalidNumberException } from "../src/exceptions/InvalidNumberException";
+import CalculatorService from "../src/services/CalculatorService";
+import { InvalidDividerException } from "../src/exceptions/InvalidDividerException";
 
 const title: string = `Testing Calculator Service`;
 const valid: string = `VALID_CASE`;
