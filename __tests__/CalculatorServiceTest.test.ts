@@ -25,6 +25,12 @@ describe(`${title} - Addition`, () => {
       CalculatorService.sum(5, "s");
     }).toThrow(InvalidNumberException);
   });
+
+  it(`${error} - value`, () => {
+    expect(() => {
+      CalculatorService.sum("😎", "😆");
+    }).toThrow(InvalidNumberException);
+  });
 });
 
 describe(`${title} - Subtraction`, () => {
